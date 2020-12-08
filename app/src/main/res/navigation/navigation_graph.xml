@@ -26,9 +26,16 @@
         <action
             android:id="@+id/action_listFragment_to_monthFragment"
             app:destination="@id/monthFragment" />
+        <action
+            android:id="@+id/action_listFragment_to_enterNewCostFragment"
+            app:destination="@id/enterNewCostFragment" />
     </fragment>
     <fragment
         android:id="@+id/monthFragment"
         android:name="com.gsixacademy.android.budgetplanner.fragments.MonthFragment"
         android:label="MonthFragment" />
+    <fragment
+        android:id="@+id/enterNewCostFragment"
+        android:name="com.gsixacademy.android.budgetplanner.fragments.EnterNewCostFragment"
+        android:label="EnterNewCostFragment" />
 </navigation>
