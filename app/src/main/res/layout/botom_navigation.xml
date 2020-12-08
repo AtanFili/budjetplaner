@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp">
+
+    <TextView
+        android:id="@+id/money_left"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Money left"
+        android:paddingTop="5dp"
+        android:drawablePadding="6dp"
+        android:drawableTop="@drawable/money_icon"
+        android:gravity="center"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/statistics"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Stats"
+        android:paddingTop="5dp"
+        android:drawablePadding="6dp"
+        android:drawableTop="@drawable/stats_icon"
+        android:gravity="center"
+        android:textStyle="bold"/>
+    </LinearLayout>

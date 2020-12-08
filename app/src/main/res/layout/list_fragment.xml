@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_list_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+
+    <ImageView
+        android:id="@+id/list_IV"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="5dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/name_of_cost_TV"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="IME NA TROSOK"
+        app:layout_constraintStart_toEndOf="@id/list_IV"
+        app:layout_constraintTop_toTopOf="@id/list_IV" />
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="Ovde Data"
+        app:layout_constraintStart_toEndOf="@id/name_of_cost_TV"
+        app:layout_constraintTop_toTopOf="@id/name_of_cost_TV" />
+    <TextView
+        android:id="@+id/categoryTV"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        app:layout_constraintStart_toStartOf="@id/name_of_cost_TV"
+       app:layout_constraintBottom_toBottomOf="@id/list_IV"
+        android:layout_marginTop="16dp"
+        android:text="CATEGORY"/>
+    <TextView
+        android:id="@+id/entervalue"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        app:layout_constraintStart_toEndOf="@id/categoryTV"
+        app:layout_constraintTop_toTopOf="@id/categoryTV"
+        android:layout_marginLeft="16dp"
+        android:text="Enter cost value"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

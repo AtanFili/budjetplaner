@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/navigation_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.gsixacademy.android.budgetplanner.fragments.SplashFragment"
+        android:label="SplashFragment" >
+        <action
+            android:id="@+id/action_splashFragment_to_sharedPreferencesFragment"
+            app:destination="@id/sharedPreferencesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sharedPreferencesFragment"
+        android:name="com.gsixacademy.android.budgetplanner.fragments.SharedPreferencesFragment"
+        android:label="SharedPreferencesFragment" >
+        <action
+            android:id="@+id/action_sharedPreferencesFragment_to_listFragment"
+            app:destination="@id/listFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="com.gsixacademy.android.budgetplanner.fragments.ListFragment"
+        android:label="ListFragment" >
+        <action
+            android:id="@+id/action_listFragment_to_monthFragment"
+            app:destination="@id/monthFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/monthFragment"
+        android:name="com.gsixacademy.android.budgetplanner.fragments.MonthFragment"
+        android:label="MonthFragment" />
+</navigation>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "900728060946",
+    "firebase_url": "https://budget-planer-c70ec-default-rtdb.firebaseio.com",
+    "project_id": "budget-planer-c70ec",
+    "storage_bucket": "budget-planer-c70ec.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:900728060946:android:f99f8e3d83d175c7192ccb",
+        "android_client_info": {
+          "package_name": "com.gsixacademy.android.budgetplanner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "900728060946-d6icrdothp8b79ouknsbu50js6ju56ch.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-LnvOeMK2lffuG6kXPLAm_qNf2vdEw4A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "900728060946-d6icrdothp8b79ouknsbu50js6ju56ch.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

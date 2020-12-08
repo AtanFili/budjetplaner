@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightgreen">
+
+
+    <TextView
+        android:id="@+id/topic_screen_shared"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:paddingTop="16dp"
+        android:text="Budget Planer"
+        android:textColor="@android:color/white"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        />
+
+    <EditText
+        android:id="@+id/edit_text_enter_name"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+       android:layout_marginBottom="150dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="288dp"
+        android:alpha=".85"
+        android:background="@drawable/gradient2"
+        android:hint="Enter your name"
+        android:textColorHint="@android:color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/topic_screen_shared"
+
+        />
+
+    <EditText
+        android:id="@+id/edit_text_enter_monthly_budget"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_margin="20dp"
+        android:layout_marginTop="120dp"
+        android:alpha=".85"
+        android:background="@drawable/gradient2"
+        android:hint="Enter monthly budget"
+        android:textColorHint="@android:color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_text_enter_name"
+
+        />
+
+    <Button
+        android:id="@+id/button_save"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_margin="20dp"
+        android:layout_marginTop="20dp"
+        android:alpha=".85"
+        android:background="@drawable/gradient2"
+        android:text="SAVE"
+        android:textColor="#111"
+        app:layout_constraintTop_toBottomOf="@id/edit_text_enter_monthly_budget" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

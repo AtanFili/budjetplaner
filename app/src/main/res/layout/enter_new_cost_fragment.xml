@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="120dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <TextView
+        android:id="@+id/category_TV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CATEGORY"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"/>
+    <androidx.appcompat.widget.AppCompatSpinner
+       android:id="@+id/spinner_enter_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/category_TV"
+        android:layout_margin="16dp"
+        android:padding="5dp"/>
+    <TextView
+        android:id="@+id/name_TV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NAME"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spinner_enter_category"
+        android:textAlignment="center"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal" />
+    <EditText
+        android:id="@+id/enter_name_ET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/name_TV"
+        android:layout_margin="16dp"/>
+    <TextView
+        android:id="@+id/amountTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/enter_name_ET"
+        android:layout_margin="16dp"
+        android:text="ENTER AMOUNT"
+        android:textSize="25dp" android:textAlignment="center"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal" />
+    <EditText
+        android:id="@+id/enter_amount_ET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/amountTV"
+        android:layout_margin="16dp"/>
+
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
