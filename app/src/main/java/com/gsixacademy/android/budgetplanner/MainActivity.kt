@@ -16,11 +16,12 @@ class MainActivity : AppCompatActivity() {
 
     lateinit var database: DatabaseReference
     var feeModel: FeeModel? = FeeModel()
-    
+    lateinit var navControler: NavController
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         database = FirebaseDatabase.getInstance().reference
+        navControler= Navigation.findNavController(this,R.id.navigation_host_fragment)
         initaliaseFireBaseDatabase()
     }
 
@@ -49,5 +50,9 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    private fun findNavController(): NavController {
 
     }
+
+
+}
