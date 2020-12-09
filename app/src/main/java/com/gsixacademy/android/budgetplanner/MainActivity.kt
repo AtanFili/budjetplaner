@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import androidx.navigation.NavController
+import androidx.navigation.Navigation
+import androidx.navigation.findNavController
 import com.google.firebase.database.*
 import com.gsixacademy.android.budgetplanner.data.FeeData
 import com.gsixacademy.android.budgetplanner.data.FeeModel
@@ -11,15 +13,14 @@ import kotlinx.android.synthetic.main.botom_navigation.*
 
 class MainActivity : AppCompatActivity() {
 
-    lateinit var navControler: NavController
-    lateinit var navListener: NavController.OnDestinationChangedListener
+
     lateinit var database: DatabaseReference
     var feeModel: FeeModel? = FeeModel()
+    
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         database = FirebaseDatabase.getInstance().reference
-
         initaliaseFireBaseDatabase()
     }
 
@@ -37,16 +38,16 @@ class MainActivity : AppCompatActivity() {
             }
         }
         database.addValueEventListener(postListener)
-    }
 
-    fun initListeners() {
-        fun initListeners() {}
-        navControler.addOnDestinationChangedListener(navListener)
-        money_left.setOnClickListener {
-            navControler.navigate(R.id.action_listFragment_to_monthFragment)
+
+
+        money_left.setOnClickListener { 
+            findNavController().navigate(R.id.action_monthFragment_to_yearlyStatistic)
         }
         statistics.setOnClickListener {
-            navControler.navigate(R.id.action_listFragment_to_enterNewCostFragment)
+            findNavController().navigate(R.id.action_monthFragment_to_yearlyStatistic)
         }
     }
-}
+
+
+    }

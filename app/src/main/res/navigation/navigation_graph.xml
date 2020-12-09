@@ -33,9 +33,17 @@
     <fragment
         android:id="@+id/monthFragment"
         android:name="com.gsixacademy.android.budgetplanner.fragments.MonthFragment"
-        android:label="MonthFragment" />
+        android:label="MonthFragment" >
+        <action
+            android:id="@+id/action_monthFragment_to_yearlyStatistic"
+            app:destination="@id/yearlyStatistic" />
+    </fragment>
     <fragment
         android:id="@+id/enterNewCostFragment"
         android:name="com.gsixacademy.android.budgetplanner.fragments.EnterNewCostFragment"
         android:label="EnterNewCostFragment" />
+    <fragment
+        android:id="@+id/yearlyStatistic"
+        android:name="com.gsixacademy.android.budgetplanner.fragments.YearlyStatistic"
+        android:label="YearlyStatistic" />
 </navigation>
